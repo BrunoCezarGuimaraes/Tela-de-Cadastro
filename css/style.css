@@ -1,0 +1,119 @@
+/*Geral*/
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Helvetica, sans-serif;
+	color:#323232;
+	border:none;
+}
+
+/*Inputs e Label*/
+input, label{
+	display: block;
+	width: 100%;
+}
+
+/*Cor do cadastro*/
+h1{
+	color:#ffffff;
+}
+
+input:focus, label:focus{
+	outline: none;
+}
+
+/*Cor dos termos e cadastro*/
+a{
+	color: #0D86F4;
+}
+
+body{
+	padding-top: 5vh; /*View Height = 5% da tela*/
+	background: url(../img/RegBG.jpg); /*Imagem do plano de fundo*/
+	background-size: cover;
+	background-position-y: -150px;
+}
+
+/*Form - Formulario*/
+#main-container{
+	width: 500px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color:  rgba(117, 190, 218, 0.4); /*opacidade é o ultiimo numero dentro de rgba*/
+	border-radius: 40px;
+	padding: 25px;
+}
+
+#main-container h1{
+	text-align: center;
+	margin-bottom: 25px;
+	font-size: 1.6rem; /* Adaptada ao elemento root - 1.6 vezes o tamanho fonte, do elemento root da página*/
+}
+
+form{
+	display: flex;
+	flex-wrap: wrap; /*alinhamento dos elementos no formulário*/
+	justify-content: space-between; /*espaçamento*/
+}
+
+.full-box{
+	flex: 1 1 100%;
+	position: relative;
+}
+
+.half-box{
+	flex: 1 1 45%;
+	position: relative;
+}
+
+.spacing{
+	margin-right: 2.5%;
+}
+
+label{
+	color: #ffffff;
+	font-weight: bold;
+	font-size: .8rem;
+}
+
+input{
+	border-bottom: 2px solid #323232; /*2*/
+	padding: 9px; /*10*/
+	font-size: .9rem;
+	margin-bottom: 40px;
+}
+
+input: focus{
+	border-color: #0D86F4;
+}
+
+input[type="submit"]{
+	background-color: #0D86F4;
+	color: #fff;
+	border: none;
+	border-radius: 20px;
+	height: 40px;
+	cursor: pointer;
+}
+
+#agreement{
+	margin-right: 5px;
+}
+
+#agreement, #agreement-label{
+	display: inline-block;
+	width: auto;
+}
+
+/* Validações*/
+.error-validation{
+	color: #ff1a1a;
+	position: absolute;
+	top: 57px;
+	font-size: .8rem;
+}
+
+.template{
+	display: none;
+}
